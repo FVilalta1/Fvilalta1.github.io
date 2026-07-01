@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sensitivity Labels Explained — Felipe Vilalta</title>
+<title>Sensitivity Labels Explained | Felipe Vilalta</title>
 <meta name="description" content="What sensitivity labels actually do, why they're the foundation of a data protection program, and how to design a taxonomy people will actually use.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,32 +34,32 @@
 
     <div class="article-body">
 
-      <p>Every data protection program eventually runs into the same question: how do you tell a computer what a document actually means? Encryption, DLP, retention, and access controls all need to know whether a file contains a public marketing deck or a board-level financial model. Sensitivity labels are the answer — a small piece of metadata that carries that meaning wherever the file goes.</p>
+      <p>Every data protection program eventually runs into the same question: how do you tell a computer what a document actually means? Encryption, DLP, retention, and access controls all need to know whether a file contains a public marketing deck or a board-level financial model. Sensitivity labels are the answer: a small piece of metadata that carries that meaning wherever the file goes.</p>
 
       <h2>What a label actually is</h2>
-      <p>A sensitivity label is metadata attached to a file or email, either visibly (a header, a footer, a watermark) or invisibly (an encrypted property embedded in the document). Once applied, the label travels with the content — through downloads, email forwards, and cloud sync — so protection isn't tied to a single location or system. In Microsoft Purview, labels can trigger encryption, restrict who can open or forward a file, and feed downstream policies like DLP and Insider Risk Management.</p>
+      <p>A sensitivity label is metadata attached to a file or email, either visibly (a header, a footer, a watermark) or invisibly (an encrypted property embedded in the document). Once applied, the label travels with the content through downloads, email forwards, and cloud sync, so protection isn't tied to a single location or system. In Microsoft Purview, labels can trigger encryption, restrict who can open or forward a file, and feed downstream policies like DLP and Insider Risk Management.</p>
 
       <p>This is the key shift labels enable: protection moves from the perimeter to the data itself. A firewall or network boundary can't tell you whether a spreadsheet leaving the building is a lunch order or a merger model. A label can.</p>
 
       <h2>Manual, automatic, and recommended labeling</h2>
       <p>Labels get applied in three ways, and most mature programs use all three together:</p>
       <ul>
-        <li><strong>Manual</strong> — a user picks a label from a dropdown in Word, Outlook, or Excel. Accurate when people understand the taxonomy, unreliable when they don't.</li>
-        <li><strong>Automatic</strong> — a policy scans content for patterns (credit card numbers, national IDs, keywords, trainable classifiers) and applies a label without user input.</li>
-        <li><strong>Recommended</strong> — the system detects sensitive content and suggests a label, but leaves the final call to the user. A useful middle ground while a program builds trust in its automatic detection.</li>
+        <li><strong>Manual</strong>: a user picks a label from a dropdown in Word, Outlook, or Excel. Accurate when people understand the taxonomy, unreliable when they don't.</li>
+        <li><strong>Automatic</strong>: a policy scans content for patterns (credit card numbers, national IDs, keywords, trainable classifiers) and applies a label without user input.</li>
+        <li><strong>Recommended</strong>: the system detects sensitive content and suggests a label, but leaves the final call to the user. A useful middle ground while a program builds trust in its automatic detection.</li>
       </ul>
 
       <h2>Designing a taxonomy people will actually use</h2>
-      <p>The single biggest failure mode in labeling programs isn't the technology — it's a taxonomy too complicated for anyone to use consistently. A few principles hold up across most organizations:</p>
+      <p>The single biggest failure mode in labeling programs isn't the technology. It's a taxonomy too complicated for anyone to use consistently. A few principles hold up across most organizations:</p>
       <ul>
         <li><strong>Keep the top level small.</strong> Four or five parent labels (e.g., Public, Internal, Confidential, Highly Confidential) are easier to apply correctly than a dozen overlapping categories.</li>
-        <li><strong>Use sub-labels for nuance, not the top level.</strong> "Confidential — Finance" or "Confidential — HR" lets you route different protection and access rules without asking users to memorize twelve names.</li>
+        <li><strong>Use sub-labels for nuance, not the top level.</strong> "Confidential: Finance" or "Confidential: HR" lets you route different protection and access rules without asking users to memorize twelve names.</li>
         <li><strong>Name labels by sensitivity, not by control.</strong> Users should be able to look at a label name and understand what's inside the document, not have to reverse-engineer what policy it triggers.</li>
         <li><strong>Pilot before you mandate.</strong> Roll out to a representative group first, watch what gets mislabeled, and adjust the taxonomy before a company-wide push locks in bad habits.</li>
       </ul>
 
       <h2>Where labels earn their keep</h2>
-      <p>Labels are rarely valuable in isolation — their real payoff shows up when other controls consume them. DLP policies can scope tighter rules to "Highly Confidential" content instead of scanning everything with the same aggressive threshold. Insider Risk Management can weight an exfiltration attempt involving a labeled file more heavily than one involving an unlabeled one. Retention and eDiscovery can use labels to identify what needs to be preserved versus what can age out. None of that works if the labels underneath aren't trustworthy — which is why taxonomy design and rollout discipline matter more than any single technical setting.</p>
+      <p>Labels are rarely valuable in isolation; their real payoff shows up when other controls consume them. DLP policies can scope tighter rules to "Highly Confidential" content instead of scanning everything with the same aggressive threshold. Insider Risk Management can weight an exfiltration attempt involving a labeled file more heavily than one involving an unlabeled one. Retention and eDiscovery can use labels to identify what needs to be preserved versus what can age out. None of that works if the labels underneath aren't trustworthy, which is why taxonomy design and rollout discipline matter more than any single technical setting.</p>
 
       <p>Get the taxonomy right, get adoption right, and every other control in the data protection stack gets sharper for free.</p>
 
@@ -73,7 +73,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>Felipe Vilalta — Cyber Data Protection</span>
+    <span>Felipe Vilalta | Cyber Data Protection</span>
     <span>Austin, Texas · © 2026</span>
   </div>
 </footer>

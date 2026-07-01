@@ -1,5 +1,5 @@
 /* ============================================================
-   Felipe Vilalta — shared stylesheet
+   Felipe Vilalta - shared stylesheet
    Edit design here once; every page picks it up.
    ============================================================ */
 
@@ -11,7 +11,7 @@
   --ink-mute: #6b7383;
   --line: #ddd8cd;
   --line-soft: #e7e3da;
-  --accent: #2f5d54;        /* deep forest — serious, not techy */
+  --accent: #2f5d54;        /* deep forest - serious, not techy */
   --accent-deep: #234840;
   --accent-tint: #e8efec;
   --card: #ffffff;

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cutting Insider Risk noise: tuning Purview IRM for signal — Felipe Vilalta</title>
+<title>Cutting Insider Risk noise: tuning Purview IRM for signal | Felipe Vilalta</title>
 <meta name="description" content="A repeatable approach to raising alert fidelity in Microsoft Purview Insider Risk Management without missing genuine risk.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,12 +33,12 @@
     </div>
 
     <div class="article-body">
-      <p>The most common way an Insider Risk Management program fails isn't a missed threat — it's an investigator queue so full of noise that no one trusts it. Out of the box, Microsoft Purview IRM will happily flag ordinary work as suspicious: a departing employee downloading their own onboarding docs, an engineer moving a repo they built, a salesperson emailing a proposal to a client. Left untuned, the platform generates alerts faster than any team can triage them, and the program quietly dies from alert fatigue.</p>
+      <p>The most common way an Insider Risk Management program fails isn't a missed threat. It's an investigator queue so full of noise that no one trusts it. Out of the box, Microsoft Purview IRM will happily flag ordinary work as suspicious: a departing employee downloading their own onboarding docs, an engineer moving a repo they built, a salesperson emailing a proposal to a client. Left untuned, the platform generates alerts faster than any team can triage them, and the program quietly dies from alert fatigue.</p>
 
-      <p>This is a note on how I approach tuning IRM so the alerts that surface are worth an investigator's time — without blinding yourself to the behavior that actually matters.</p>
+      <p>This is a note on how I approach tuning IRM so the alerts that surface are worth an investigator's time, without blinding yourself to the behavior that actually matters.</p>
 
       <h2>Start with what "normal" looks like</h2>
-      <p>Before touching a threshold, you need a baseline. IRM scores risk relative to a population, so if you don't understand what routine activity looks like across your user groups, you can't tell an anomaly from a Tuesday. Spend the first weeks in analytics and audit mode, watching which activities generate the most indicators and which populations generate the most volume. The goal is not to act — it's to learn the shape of your data.</p>
+      <p>Before touching a threshold, you need a baseline. IRM scores risk relative to a population, so if you don't understand what routine activity looks like across your user groups, you can't tell an anomaly from a Tuesday. Spend the first weeks in analytics and audit mode, watching which activities generate the most indicators and which populations generate the most volume. The goal is not to act. It's to learn the shape of your data.</p>
 
       <blockquote>An alert is only useful if an investigator can look at it and quickly decide whether it deserves escalation. Everything below is in service of that one outcome.</blockquote>
 
@@ -46,7 +46,7 @@
       <p>Once you have a baseline, most of the fidelity gains come from three places, in this order:</p>
 
       <h3>1. Exclusions</h3>
-      <p>The fastest wins come from excluding activity that is expected by design. Sanctioned file-sharing domains, approved cloud apps, service accounts, and known bulk-processing systems generate enormous indicator volume that means nothing. Excluding them doesn't weaken your posture — it removes the hay so you can see the needle.</p>
+      <p>The fastest wins come from excluding activity that is expected by design. Sanctioned file-sharing domains, approved cloud apps, service accounts, and known bulk-processing systems generate enormous indicator volume that means nothing. Excluding them doesn't weaken your posture. It removes the hay so you can see the needle.</p>
 
       <h3>2. Policy thresholds</h3>
       <p>Default thresholds are deliberately broad because Microsoft can't know your environment. Tightening the number of events, the time windows, and the sequence conditions required to raise an alert dramatically cuts volume. The trick is to tighten iteratively and watch what you lose: raise a threshold, review a week of results, confirm you're only shedding noise, then raise again.</p>
@@ -55,13 +55,13 @@
       <p>A single download is weak signal. A download followed by a rename, followed by an exfiltration path, within a compressed window, is a story. Prioritizing sequence-based detections over single-indicator ones is the highest-leverage shift you can make: it moves you from "someone touched a file" to "someone did the thing that precedes data theft."</p>
 
       <h2>Tune with the investigators, not for them</h2>
-      <p>The people who know whether an alert is noise are the ones working the queue. I run tuning as a feedback loop with the investigation team: they flag which alert types are consistently dismissed, and those become candidates for exclusion or threshold changes. This does two things — it improves fidelity, and it gives investigators ownership of a system they'd otherwise resent.</p>
+      <p>The people who know whether an alert is noise are the ones working the queue. I run tuning as a feedback loop with the investigation team: they flag which alert types are consistently dismissed, and those become candidates for exclusion or threshold changes. This does two things: it improves fidelity, and it gives investigators ownership of a system they'd otherwise resent.</p>
 
       <h2>Don't tune yourself blind</h2>
-      <p>The failure mode on the other side of noise is over-tuning: suppress so aggressively that you stop seeing real precursors to data loss. Guard against it by keeping a small set of deliberately sensitive policies scoped to your highest-risk populations — departing employees, privileged access holders, users already under review — and accept more noise there in exchange for coverage. Fidelity and sensitivity are a portfolio, not a single dial.</p>
+      <p>The failure mode on the other side of noise is over-tuning: suppress so aggressively that you stop seeing real precursors to data loss. Guard against it by keeping a small set of deliberately sensitive policies scoped to your highest-risk populations (departing employees, privileged access holders, users already under review) and accept more noise there in exchange for coverage. Fidelity and sensitivity are a portfolio, not a single dial.</p>
 
       <h2>The takeaway</h2>
-      <p>A healthy IRM program is measured less by how many alerts it produces and more by how many of them an investigator is glad they looked at. Baseline first, cut the expected noise, tighten thresholds iteratively, prefer sequences over single events, and tune in partnership with the people working the cases. Do that, and the queue becomes something the team trusts — which is the only state in which an insider risk program actually protects anything.</p>
+      <p>A healthy IRM program is measured less by how many alerts it produces and more by how many of them an investigator is glad they looked at. Baseline first, cut the expected noise, tighten thresholds iteratively, prefer sequences over single events, and tune in partnership with the people working the cases. Do that, and the queue becomes something the team trusts, which is the only state in which an insider risk program actually protects anything.</p>
     </div>
 
     <div class="article-foot">
@@ -72,7 +72,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>Felipe Vilalta — Cyber Data Protection</span>
+    <span>Felipe Vilalta | Cyber Data Protection</span>
     <span>Austin, Texas · © 2026</span>
   </div>
 </footer>
