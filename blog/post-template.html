@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     POST TEMPLATE — how to publish a new post (3 steps):
+
+     1. COPY this file. Rename it to something-url-friendly.html
+        (lowercase, hyphens, no spaces). That filename IS the post URL.
+
+     2. EDIT the 5 fields marked  << EDIT >>  below:
+        - <title>            (browser tab text)
+        - meta description   (search-engine summary; 1 sentence)
+        - .cat               (category label, e.g. "Insider Risk")
+        - post date          (e.g. "Jul 15, 2026")
+        - <h1>               (the headline)
+        Then write your article inside the <div class="article-body">.
+
+     3. ADD it to the list: open blog/index.html, copy one
+        <a class="post-row"> block, paste it at the TOP of the list,
+        and update its href/date/title/description to match this post.
+        (Optional: also mirror it in the "Writing" section of index.html.)
+
+     WRITING THE BODY — the tags you'll use most:
+        <p>paragraph</p>
+        <h2>Section heading</h2>   <h3>Sub-heading</h3>
+        <ul><li>bullet</li></ul>   <ol><li>numbered</li></ol>
+        <blockquote>a pulled quote</blockquote>
+        inline <code>code</code>
+        <pre><code>multi-line
+        code block</code></pre>
+        <a href="https://...">a link</a>
+        <img src="image.png" alt="describe it">   (put the image file in this blog/ folder)
+
+     KEEP IT CLEAN: never paste real client names, internal
+     architecture, credentials, or anything under NDA. Everything
+     here is permanent and public.
+     ============================================================ -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><!-- << EDIT >> -->Post title — Felipe Vilalta</title>
+<meta name="description" content="<!-- << EDIT: one-sentence summary >> -->">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="../index.html" class="brand">Felipe Vilalta</a>
+    <div class="links">
+      <a href="../index.html#about" class="hide-sm">About</a>
+      <a href="../index.html#experience" class="hide-sm">Experience</a>
+      <a href="index.html">Writing</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<article class="article">
+  <div class="wrap">
+    <div class="article-head">
+      <a href="index.html" class="back">← All writing</a>
+      <div class="meta"><span class="cat"><!-- << EDIT: category >> -->Category</span> · <!-- << EDIT: date >> -->Month 00, 2026 · 0 min read</div>
+      <h1><!-- << EDIT: headline >> -->Your post headline goes here</h1>
+    </div>
+
+    <div class="article-body">
+      <!-- ===== WRITE YOUR ARTICLE BELOW ===== -->
+
+      <p>Opening paragraph. Set up the problem or the idea.</p>
+
+      <h2>A section heading</h2>
+      <p>Body text. Explain the thing.</p>
+
+      <ul>
+        <li>A point.</li>
+        <li>Another point.</li>
+      </ul>
+
+      <p>Wrap it up with a takeaway.</p>
+
+      <!-- ===== END ARTICLE ===== -->
+    </div>
+
+    <div class="article-foot">
+      <a href="index.html" class="back">← All writing</a>
+    </div>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Felipe Vilalta — Cyber Data Protection</span>
+    <span>Austin, Texas · © 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
